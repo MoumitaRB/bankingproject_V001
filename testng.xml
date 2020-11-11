@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Banking Project Suite">
+
+ <listeners>
+   
+    <listener class-name= "com.bankingproject_V001.utilities.ExtentReportManager"/>
+
+  </listeners>
+
+   <test thread-count="5" name="ChromeTest">
+  
+      <parameter name="browser" value="chrome"/>
+  
+    <classes>
+       
+      <!-- <class name="com.bankingproject_V001.testCases.VerifyingAlertMsg_000"/>
+      <class name="com.bankingproject_V001.testCases.VerifySuccessfullLogin_001"/>
+      <class name="com.bankingproject_V001.testCases.VerifyLoginSectionWithMultipleDataSet_002"/>
+      <class name="com.bankingproject_V001.testCases.VerifyingChangePasswordAndLogin_003"/>
+      <class name="com.bankingproject_V001.testCases.VerifyingAfterPasswordIsChangedPageIsRedirectedToLoginPage_004"/>
+      <class name="com.bankingproject_V001.testCases.VerifyUserCanLoginWIthTheNewPasswordAfterPasswordHasChanged_005"/>
+      <class name="com.bankingproject_V001.testCases.VerifyAfterAddingNewCustomerPageRedirectsToDetailsOfAddedCustomer_006"/>
+      <class name="com.bankingproject_V001.testCases.VerifyNewAccountCanBeAddedToNewCustomer_007"/>
+      <class name="com.bankingproject_V001.testCases.VerifyFundTransferIsDone_008"/>
+      <class name="com.bankingproject_V001.testCases.VerifyCustomerDetailsAppearOnTheCustomizedStatement_009"/>
+      <class name="com.bankingproject_V001.testCases.VerifySystemBehaviourWhenManagerEntersWrongAccountNumberDuringFundTransfer_010"/>
+      <class name="com.bankingproject_V001.testCases.VerifyFundTransferForSameAccountNumbers_011"/>-->
+      <class name="com.bankingproject_V001.testCases.VerifyFundTransferWhenAccountBalanceIsLow_012"/>
+      
+      
+    </classes>
+    
+  </test> 
+  
+  
+   <!--  <test thread-count="5" name="FirefoxTest">
+  
+      <parameter name="browser" value="firefox"/>
+  
+    <classes>
+    
+      <class name="com.bankingproject_V001.testCases.VerifySuccessfullLogin_001"/>
+      
+    </classes>
+    
+  </test> -->
+  
+  
+  
+</suite> <!-- Banking Project Suite -->
